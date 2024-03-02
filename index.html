@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - CV</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Nicholas Duadei N.</h1>
+        <p>Experienced Fullstack and Frontend Developer</p>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            Hello! I am a passionate web developer. Experienced in crafting user-friendly websites and applications, with a successful history of collaboration
+            across diverse teams. Proven track record in timely delivery of high-quality products. Eager to contribute to
+            organizational success and further enhance skills.
+        </p>
+        <!-- <div class="image-gallery">
+            <img src="./images/img1.png" alt="Me and Friend 1">
+            <img src="./images/img2.png" alt="Me and Friend 2">
+            <img src="./images/img3.png" alt="Me and Friend 3">
+            <img src="./images/img4.png" alt="Me and Friend 4">
+            <img src="./images/img5.png" alt="Me and Friend 5">
+        </div> -->
+    </section>
+    <section id="about">
+        <h2>Photo Gallery</h2>
+        <div class="image-gallery">
+            <img src="./images/img1.png" alt="Me and Friend 1" onclick="showModal(0)">
+            <img src="./images/img2.png" alt="Me and Friend 2" onclick="showModal(1)">
+            <img src="./images/img3.png" alt="Me and Friend 3" onclick="showModal(2)">
+            <img src="./images/img4.png" alt="Me and Friend 4" onclick="showModal(3)">
+            <img src="./images/img5.png" alt="Me and Friend 5" onclick="showModal(4)">
+        </div>
+        <div id="modal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="modalImage">
+            <span class="prev" onclick="changeImage(-1)">&#10094;</span>
+            <span class="next" onclick="changeImage(1)">&#10095;</span>
+        </div>
+    </section>
+
+    <!-- <section class="exec-summary">
+        <h2>Executive Summary</h2>
+        <p>
+            Experienced in crafting user-friendly websites and applications, with a successful history of collaboration
+            across diverse teams. Proven track record in timely delivery of high-quality products. Eager to contribute to
+            organizational success and further enhance skills.
+        </p>
+    </section> -->
+
+    <section class="experience">
+        <h2>Experience</h2>
+
+        <!-- Existing Experience Details -->
+
+        <article>
+            <h3>Frontend Developer</h3>
+            <p><strong>Ayaweisoft</strong> - Mar 2021 to Mar 2022</p>
+            <ul>
+                <li>Collaborated with a team of software developers to develop the I-Sabi Mobile Application with React.</li>
+                <li>Implemented UI designs and functionalities provided by the UI/UX team.</li>
+                <li>Ensured all screens were responsive across different devices.</li>
+                <li>Aided UI/UX designers by contributing to design reviews.</li>
+            </ul>
+        </article>
+        <article>
+            <h3>Frontend Developer</h3>
+            <p><strong>Ayaweisoft</strong> - Mar 2021 to Mar 2022</p>
+            <ul>
+                <li>Collaborated with a team of software developers to develop the I-Sabi Mobile Application with React.</li>
+                <li>Implemented UI designs and functionalities provided by the UI/UX team.</li>
+                <li>Ensured all screens were responsive across different devices.</li>
+                <li>Aided UI/UX designers by contributing to design reviews.</li>
+            </ul>
+        </article>
+
+    </section>
+
+    <section class="skills">
+        <h2>Skills</h2>
+        <h3>Web Development</h3>
+        <ul>
+            <li>HTML/CSS</li>
+            <li>Tailwind/Bootstrap</li>
+            <li>Responsive design</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>React Native</li>
+            <li>NextJs</li>
+            <li>Typescript</li>
+            <li>Git/Github</li>
+            <li>Debugging</li>
+            <li>NodeJs</li>
+            <li>Express</li>
+            <li>MongoDB/Mongoose</li>
+        </ul>
+
+        <h3>Industry</h3>
+        <ul>
+            <li>Agile Development</li>
+            <li>Collaboration</li>
+            <li>Communication</li>
+        </ul>
+    </section>
+
+    <section class="honours-awards">
+        <h2>Honours and Awards</h2>
+        <ul>
+            <li>Awarded a scholarship by the MTN Foundation, August 2020</li>
+            <li>Awarded a scholarship by the DeltaAfrik Charitable Foundation, October 2019</li>
+        </ul>
+    </section>
+
+    <section class="education">
+        <h2>Education</h2>
+        <p><strong>Mechanical Engineering</strong> - Niger Delta University (Sep. 2017 – August 2023)</p>
+        <p>CGPA: 4.69</p>
+
+        <p><strong>ALX-T Full Stack Developer Nanodegree Program</strong> - Udacity (May 2022 – August 2022)</p>
+
+        <p><strong>Applied Data Science I: Scientific Computing and Python</strong> - WorldQuant University</p>
+    </section>
+
+    <section class="projects">
+        <h2>Projects</h2>
+
+        <!-- Existing Project Details -->
+
+        <p><strong>Brilliant Brains</strong> - A Content Management System for a scholarship organization built with NextJs</p>
+        <ul>
+            <li>Website: <a href="http://bbscholarships.org/" target="_blank">http://bbscholarships.org/</a></li>
+            <li>GitHub: <a href="https://github.com/DevNickJr/brilliant-brain" target="_blank">https://github.com/DevNickJr/brilliant-brain</a></li>
+        </ul>
+
+        <p><strong>Yenreach</strong> - An all-in-one platform combining business listings, job listings, and a marketplace.</p>
+        <ul>
+            <li>Website: <a href="http://yenreach.com/" target="_blank">http://yenreach.com/</a></li>
+            <li>GitHub: <a href="https://github.com/Yenreach/yenreach--client" target="_blank">https://github.com/Yenreach/yenreach--client</a></li>
+        </ul>
+
+        <p><strong>I-Sabi</strong> - A cross-platform trivia game and event management application.</p>
+        <ul>
+            <li>Website: <a href="http://i-sabi.app/" target="_blank">http://i-sabi.app/</a></li>
+        </ul>
+
+        <p><strong>Pathway</strong> - A waitlist for upcoming experiences in food, language, music, fashion, and travel.</p>
+        <ul>
+            <li>Website: <a href="https://www.discoverpathway.com/" target="_blank">https://www.discoverpathway.com/</a></li>
+            <li>GitHub: <a href="https://github.com/DevNickJr/pathway--frontend" target="_blank">https://github.com/DevNickJr/pathway--frontend</a></li>
+        </ul>
+
+        <p><strong>Eduverse</strong> - Eduverse redefines student management, providing a comprehensive platform for academic institutions.</p>
+        <ul>
+            <li>Website: <a href="https://student-management-gamma.vercel.app/" target="_blank">https://student-management-gamma.vercel.app/</a></li>
+            <li>GitHub: <a href="https://github.com/DevNickJr/student-management" target="_blank">https://github.com/DevNickJr/student-management</a></li>
+        </ul>
+
+    </section>
+
+    <footer>
+        <p>Contact: <a target="_blank" href="mailto:nicholasduadei14@gmail.com">nicholasduadei14@gmail.com</a> | LinkedIn: <a target="_blank" href="https://www.linkedin.com/in/duadei-nicholas-05957b18b">https://www.linkedin.com/in/duadei-nicholas-05957b18b</a> | GitHub: <a target="_blank" href="https://github.com/DevNickJr">https://github.com/DevNickJr</a></p>
+    </footer>
+
+</body>
+<script src="./main.js"></script>
+
+</html>
